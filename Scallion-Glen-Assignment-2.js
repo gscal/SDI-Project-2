@@ -10,7 +10,6 @@ var myCastle = "\"Windzer\" Castle";
 var Beast = " Dragon";
 var Weapon1 = " Iron Clad Bo Staff"; //This weapon doesn't fare well in the rain
 var Weapon2 = " Poison Tipped Ironwood Spear "; //This weapon doesn't fare well with Fire
-var WeaponCount = (1< 2 ) // Boolean Variable
 var thebestroute = " The Westward Trail "; //String Variable
 var Knights = " 4 "; //Number Variable
 
@@ -18,13 +17,27 @@ var Knights = " 4 "; //Number Variable
 //Initiation of Quest
 //Prompt
 
-var person = prompt("Type what you see in the input field to enter out lair", "Password");
+var person = prompt("Type what you see in the input field to enter out lair", "Password")
+//{
+//	alert("Access Denied!");
+//	console.log("Lets try this again..");
+//	}
+//	else {
+//		prompt("Type what you see in the input field to enter out lair", "Password");
+//	}
 
 if (person.toLowerCase() == "Password") {
   alert("Welcome, One moment!");
 }
-
 confirm("Validation Complete!");
+
+//Procedure
+function plus (a,b) {
+         var WeaponCount = a+b;
+	console.log( WeaponCount + " weapons in Arms cache!" );
+}
+plus(1,1);
+
 
 //My Output
 console.log( "UGH! We need to this" + Beast + " must be slain... But how?!" );
