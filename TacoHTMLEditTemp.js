@@ -10,31 +10,29 @@ var myCastle = "\"Windzer\" Castle";
 var Beast = " Dragon";
 var Weapon1 = " Iron Clad Bo Staff"; //This weapon doesn't fare well in the rain
 var Weapon2 = " Poison Tipped Ironwood Spear "; //This weapon doesn't fare well with Fire
-var WeaponCount = (1< 2 ) // Boolean Variable
-var thebestroute = " The Westward Trail "; //String Variable
-var Knights = " 4 "; //Number Variable
-
+var thebestroute = " The Westward Trail ";
+var Knights = " 4 ";
 
 //Initiation of Quest
-//Prompt
 
-var person = prompt("Type what you see in the input field to enter out lair", "Password");
+var person = prompt("Jezzin", "Harry Potter");
 
-if (person.toLowerCase() == "Password") {
-  alert("Welcome, One moment!");
+if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today?";
 }
 
-confirm("Validation Complete!");
+
 
 //My Output
 console.log( "UGH! We need to this" + Beast + " must be slain... But how?!" );
-console.log( "Could you help us decide on how we could carry out a good deed?" );
+
+alert( "Could you help us decide on how we could carry out a good deed?" );
 
 console.log( "Ok Great! We" + Knights + "men want to use an" + Weapon1 + " to slay the" + Beast + "." + " However, If it rains, the" + Weapon2 + "would be a better choice." );
 
 if( confirm( "Help us! Look there and tell us if there are storm clouds approaching. If so then click Cancel to cancel tonights trip or OK if we're Ok!")) {
 	alert( "Great, now we can move foward with everything, OK?" );
-	console.log( "Great, now we can move foward with everything." );
 	console.log( "Since there are no rain clouds abroad, we shall use the" + thebestroute + "to carry out this need and trek at midnight tonight!" );
 	alert( "We all say Yea! Click OK if you say Yea?");
 	 }
