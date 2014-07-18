@@ -41,22 +41,15 @@ function myFunction() {
 
 //Number Function
 function myFunction() {
-    var x1 = true;
-    var x2 = false;
-    var x3 = new Date();
-    var x4 = "999";
-    var x5 = "999 888";
-
-    var n = 
-    Number(x1) + "<br>" + 
-    Number(x2) + "<br>" + 
-    Number(x3) + "<br>" + 
-    Number(x4) + "<br>" + 
-    Number(x5);
-    document.getElementById("demo").innerHTML = n;
+    var text = "Knights 4";
+    var i;
+    for (i = 0; i < 4; i++) {
+        text += "The number is " + i + "<br>";
+    }
+    console.log( "Great all us " + text + " are present!" );
 }
 
-//My Output
+//String Function
 console.log( "UGH! We need to this" + Beast + " must be slain... But how?!" );
 console.log( "Could you help us decide on how we could carry out a good deed?" );
 
