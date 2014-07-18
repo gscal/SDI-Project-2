@@ -1,9 +1,10 @@
 //alert("JavaScript works!");
 
 // Glen Scallion
-// 07/10/2014
-// Project 1
-// Dragons at Dusk
+// 07/17/2014
+// Project 2
+// Dragons at Dusk, an in depth look
+//Initiation of Quest
 
 //My Variables
 var myCastle = "\"Windzer\" Castle";
@@ -13,31 +14,47 @@ var Weapon2 = " Poison Tipped Ironwood Spear "; //This weapon doesn't fare well 
 var thebestroute = " The Westward Trail "; //String Variable
 var Knights = " 4 "; //Number Variable
 
-
-//Initiation of Quest
 //Prompt
-
 var person = prompt("Type what you see in the input field to enter out lair", "Password")
-//{
-//	alert("Access Denied!");
-//	console.log("Lets try this again..");
-//	}
-//	else {
-//		prompt("Type what you see in the input field to enter out lair", "Password");
-//	}
-
-if (person.toLowerCase() == "Password") {
+	if (person.toLowerCase() == "Password") {
   alert("Welcome, One moment!");
 }
 confirm("Validation Complete!");
 
-//Procedure
+//Procedure Function
 function plus (a,b) {
          var WeaponCount = a+b;
 	console.log( WeaponCount + " weapons in Arms cache!" );
 }
 plus(1,1);
 
+//Boolean Function
+function myFunction() {
+    var text = "10 Minutes to wait for reasearch.";
+    var i = 0;
+    while (i < 10) {
+        text += "<br>The number is " + i;
+        i++;
+    }
+    console.log( text + " That was fast!" );
+}
+
+//Number Function
+function myFunction() {
+    var x1 = true;
+    var x2 = false;
+    var x3 = new Date();
+    var x4 = "999";
+    var x5 = "999 888";
+
+    var n = 
+    Number(x1) + "<br>" + 
+    Number(x2) + "<br>" + 
+    Number(x3) + "<br>" + 
+    Number(x4) + "<br>" + 
+    Number(x5);
+    document.getElementById("demo").innerHTML = n;
+}
 
 //My Output
 console.log( "UGH! We need to this" + Beast + " must be slain... But how?!" );
